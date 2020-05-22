@@ -147,7 +147,7 @@ import java.util.stream.Collectors;
     public void executeBoth(@NotNull CommandSender sender, String[] args) {
     }
 
-    public List<String> getTabCompletion(@NotNull CommandSender sender, @NotNull String[] args) {
+    public List<String> getTabCompletion(@NotNull CommandSender sender, String[] args) {
         if (args.length != 1) return new ArrayList<>();
         return getChildren()
                 .entrySet()
